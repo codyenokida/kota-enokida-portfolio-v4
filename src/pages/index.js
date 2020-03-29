@@ -4,11 +4,17 @@ import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
 import NavBar from "../components/NavBar/NavBar"
 import SectionLayout from "../components/SectionLayout/SectionLayout"
+import SkillsBox from "../components/SkillsBox/SkillsBox"
+import ExperienceBox from "../components/ExperienceBox/ExperienceBox"
+import ProjectBox from "../components/ProjectBox/ProjectBox"
+import { Flex } from "rebass"
 
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../theme';
 import { GlobalStyles } from '../global';
 
+import codyenokidaImage from "../images/codyenokida-preview.png"
+import dspuciImage from "../images/dspuci-preview.png"
 
 const IndexPage = () => {
 
@@ -25,7 +31,7 @@ const IndexPage = () => {
         <SEO title="Home" />
 
         <Layout>
-          <div style={{marginTop: 100}}>
+          <div style={{marginTop: 100, marginBottom: 150,}}>
             <h1>Hey there! 🤙</h1>
             <br/>
             <h1>I’m <span>Kota Enokida</span>, an aspiring front-end developer focused on delivering beautiful interfaces & experiences 🖥</h1>
@@ -35,7 +41,7 @@ const IndexPage = () => {
           </div>
           <SectionLayout title="ABOUT ME">
             <p>
-            I’m currently a 2nd year at the University of California, Irvine pursuing a degree in computer science and digital arts. I have a passion for building awesome things on the web. 
+            I’m currently a 2nd year at the <span>University of California, Irvine</span> pursuing a degree in computer science and digital arts. I have a passion for building awesome things on the web. 
             </p>
             <br/>
             <p>
@@ -48,15 +54,67 @@ const IndexPage = () => {
           </SectionLayout>
 
           <SectionLayout title="SKILLS">
+            <Flex flexWrap="wrap">
 
+              <SkillsBox 
+                title="LANGUAGES">
+                  {['Javascript (ES6)', 'HTML', 'CSS/Sass', 'Python', 'C++', 'Java']}
+              </SkillsBox>
+
+              <SkillsBox 
+                title="FRAMEWORKS">
+                  {['React', 'Angular', 'Node', 'Express', 'Wordpress']}
+              </SkillsBox>
+
+              <SkillsBox 
+                title="TOOLS">
+                  {['Git & Github', 'Bash', 'Postman', 'MongoDB', 'Hadoop', 'Unity']}
+              </SkillsBox>
+
+              <SkillsBox 
+                title="DESIGN">
+                  {['Figma', 'Adobe XD', 'Adobe Illustrator', 'Adobe Photoshop', 'Canva', 'Wireframing', 'Prototyping']}
+              </SkillsBox>
+            </Flex>
           </SectionLayout>
           
           <SectionLayout title="EXPERIENCES">
-    
+            <ExperienceBox
+              title="XLsoft Corporation"
+              duration="Jun 2019 - Present"
+              position="Software Engineer Intern" />
+            <ExperienceBox
+              title="Softech & Associates, Inc."
+              duration="Jun 2019 - Sep 2019"
+              position="Software Engineer Intern" />
+            <ExperienceBox
+              title="Delta Sigma Pi"
+              duration="Oct 2019 - Present"
+              position="Director of Technology, Webmaster" />
+            <ExperienceBox
+              title="Management Information Student Society"
+              duration="Oct 2019 - Present"
+              position="Mentor" />
+            <ExperienceBox
+              title="Information & Computer Science Student Council"
+              duration="Oct 2018 - Jun 2019"
+              position="Event Coordinator" />
           </SectionLayout>
 
           <SectionLayout title="PROJECTS">
-    
+            <ProjectBox 
+              src={codyenokidaImage} 
+              title="codyenokida.com (v3)" 
+              description="Third iteration of my personal portfolio website. Showcases interests, experiences, and hobbies." 
+              tech="Gatsby.js, HTML, CSS, GraphQL" 
+              theme={theme}/>
+
+            <ProjectBox 
+              src={dspuciImage} 
+              title="dspuci.com" 
+              description="Website for Delta Sigma Pi, professional business fraternity showcasing brothers, careers, and professionalism." 
+              tech="Gatsby.js, HTML, CSS, GraphQL" 
+              theme={theme}/>
           </SectionLayout>
         </Layout>
 

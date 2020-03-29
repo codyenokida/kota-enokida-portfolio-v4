@@ -1,0 +1,30 @@
+.projectBoxContainer {
+    padding-bottom: 30px;    
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.tech {
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.icon {
+    padding-right: 25px;
+}
+
+@media only screen and (max-width: 480px) {
+    p {
+        margin: 0 0 5px 0;
+    }
+
+    .experienceBox {
+        padding: 0 0 20px 0;
+    }
+}

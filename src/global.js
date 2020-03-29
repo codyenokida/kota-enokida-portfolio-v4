@@ -6,18 +6,14 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     padding: 0;
     margin: 0;
+    font-weight: 300;
     font-family: Apercu, "Source Sans Pro", system,system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
     transition: all 0.25s linear;
   }
 
   h1 {
-    font-weight: 300;
     font-size: 2.5rem;
     max-width: 800px;
-  }
-
-  h2 {
-    font-weight: 300;
   }
 
   span {
@@ -38,7 +34,6 @@ export const GlobalStyles = createGlobalStyle`
 
   @media only screen and (max-width: 480px) {
     h1 {
-      font-weight: 300;
       font-size: 2rem;
     }
   }
