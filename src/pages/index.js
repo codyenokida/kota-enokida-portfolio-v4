@@ -8,9 +8,10 @@ import SkillsBox from "../components/SkillsBox/SkillsBox"
 import ExperienceBox from "../components/ExperienceBox/ExperienceBox"
 import ProjectBox from "../components/ProjectBox/ProjectBox"
 import Footer from "../components/Footer/Footer"
-import { Flex } from "rebass"
 
+import { Flex } from "rebass"
 import { ThemeProvider } from 'styled-components';
+
 import { lightTheme, darkTheme } from '../theme';
 import { GlobalStyles } from '../global';
 
