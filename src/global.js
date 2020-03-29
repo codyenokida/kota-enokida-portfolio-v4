@@ -28,6 +28,10 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: underline solid #4AA8FF;
   }
 
+  p {
+    margin: 0;
+  }
+
   a {
     color: ${({ theme }) => theme.text};
   }
