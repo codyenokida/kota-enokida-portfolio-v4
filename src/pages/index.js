@@ -29,7 +29,7 @@ const IndexPage = () => {
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
         <NavBar onChange={toggleTheme}/>
-        <SEO title="Home" />
+        <SEO title="Kota Cody Enokida" />
 
         <Layout>
           <div style={{marginTop: 100, marginBottom: 150,}}>
