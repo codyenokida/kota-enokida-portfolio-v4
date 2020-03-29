@@ -37,7 +37,7 @@ const IndexPage = () => {
             <br/>
             <h1>I’m <span>Kota Enokida</span>, an aspiring front-end developer focused on delivering beautiful interfaces & user experiences 🖥</h1>
             <br/>
-            <h2>Let’s talk! 📩 <a href="mailto:codyenokida@gmail.com" target="_blank">codyenokida@gmail.com</a></h2>
+            <h2>Let’s talk! 📩 <a href="mailto:codyenokida@gmail.com" target="_blank" rel="noopener noreferrer">codyenokida@gmail.com</a></h2>
             <br/>
           </div>
           <SectionLayout title="ABOUT ME">
