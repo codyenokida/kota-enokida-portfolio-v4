@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    width: 100vw;
+    top: 0;
+}
+
+.imageContainer,
+.switchContainer {
+    width: 50%;
+}
+
+.switchComponent {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    float: right;
+    padding: 20px 20px 0px 0px;
+}
+
+.image {
+    width: 75px;
+    float: left;
+    padding: 20px 0px 0px 20px;
+}
+
+.switch {
+    padding: 0 10px 0 10px
+}
+
+.sun,
+.moon {
+    width: 30px;
+}
+
+.sun {
+    margin: 20px 20px 0px 0px;
+}
