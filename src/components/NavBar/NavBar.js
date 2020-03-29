@@ -14,7 +14,8 @@ class NavBar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            toggled: false
+            toggled: false,
+            checked: false
         }
         this.handleChange = this.handleChange.bind(this);
     }

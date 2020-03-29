@@ -34,7 +34,7 @@ const IndexPage = () => {
           <div style={{marginTop: 100, marginBottom: 150,}}>
             <h1>Hey there! 🤙</h1>
             <br/>
-            <h1>I’m <span>Kota Enokida</span>, an aspiring front-end developer focused on delivering beautiful interfaces & experiences 🖥</h1>
+            <h1>I’m <span>Kota Enokida</span>, an aspiring front-end developer focused on delivering beautiful interfaces & user experiences 🖥</h1>
             <br/>
             <h2>Let’s talk! 📩 <a>codyenokida@gmail.com</a></h2>
             <br/>
@@ -107,15 +107,20 @@ const IndexPage = () => {
               title="codyenokida.com (v3)" 
               description="Third iteration of my personal portfolio website. Showcases interests, experiences, and hobbies." 
               tech="Gatsby.js, HTML, CSS, GraphQL" 
-              theme={theme}/>
+              theme={theme}
+              githubLink="https://github.com/codyenokida/kota-enokida-portfolio-v3"
+              webLink="https://kotaenokida.netlify.com/"/>
 
             <ProjectBox 
               src={dspuciImage} 
               title="dspuci.com" 
               description="Website for Delta Sigma Pi, professional business fraternity showcasing brothers, careers, and professionalism." 
               tech="Gatsby.js, HTML, CSS, GraphQL" 
-              theme={theme}/>
+              theme={theme}
+              githubLink="https://github.com/dspuci/dspuci-website-gatsby"
+              webLink="http://www.dspuci.com/"/>
           </SectionLayout>
+          
         </Layout>
 
       </ThemeProvider> 

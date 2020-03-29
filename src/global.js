@@ -6,7 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     padding: 0;
     margin: 0;
-    font-weight: 300;
     font-family: Apercu, "Source Sans Pro", system,system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
     transition: all 0.25s linear;
   }
@@ -14,18 +13,19 @@ export const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 2.5rem;
     max-width: 800px;
+    font-weight: 300;
   }
 
   span {
     font-weight: 500;
   }
 
-  h2 a {
-    text-decoration: underline solid #4AA8FF;
+  h2 {
+    font-weight: 300;
   }
 
-  p {
-    margin: 0;
+  h2 a {
+    text-decoration: underline solid #4AA8FF;
   }
 
   a {

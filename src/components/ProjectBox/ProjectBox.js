@@ -8,7 +8,7 @@ import hyperlinkWhite from '../../images/hyperlinkWhite.svg'
 
 import styles from './ProjectBox.module.css'
 
-const ProjectBox = ({src, title, description, tech, theme}) => {
+const ProjectBox = ({src, title, description, tech, theme, githubLink, webLink}) => {
     return(
         <Flex flexWrap="wrap" className={styles.projectBoxContainer}>
             <Box 
@@ -25,8 +25,8 @@ const ProjectBox = ({src, title, description, tech, theme}) => {
                 <p>{description}</p>
                 <p className={styles.tech}>Technologies:</p>
                 <p>{tech}</p>
-                {theme === 'light' ? <Image src={githubBlack} className={styles.icon}/> : <Image src={githubWhite} className={styles.icon}/>}
-                {theme === 'light' ? <Image src={hyperlinkBlack}/> : <Image src={hyperlinkWhite}/>}
+                <a href={githubLink} target="_blank">{theme === 'light' ? <Image src={githubBlack} className={styles.icon}/> : <Image src={githubWhite} className={styles.icon}/>}</a>
+                <a href={webLink} target="_blank">{theme === 'light' ? <Image src={hyperlinkBlack}/> : <Image src={hyperlinkWhite}/>}</a>
             </Box>
         </Flex>
     )
