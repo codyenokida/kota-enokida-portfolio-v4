@@ -7,6 +7,7 @@ import SectionLayout from "../components/SectionLayout/SectionLayout"
 import SkillsBox from "../components/SkillsBox/SkillsBox"
 import ExperienceBox from "../components/ExperienceBox/ExperienceBox"
 import ProjectBox from "../components/ProjectBox/ProjectBox"
+import Footer from "../components/Footer/Footer"
 import { Flex } from "rebass"
 
 import { ThemeProvider } from 'styled-components';
@@ -36,7 +37,7 @@ const IndexPage = () => {
             <br/>
             <h1>I’m <span>Kota Enokida</span>, an aspiring front-end developer focused on delivering beautiful interfaces & user experiences 🖥</h1>
             <br/>
-            <h2>Let’s talk! 📩 <a>codyenokida@gmail.com</a></h2>
+            <h2>Let’s talk! 📩 <a href="mailto:codyenokida@gmail.com" target="_blank">codyenokida@gmail.com</a></h2>
             <br/>
           </div>
           <SectionLayout title="ABOUT ME">
@@ -120,8 +121,10 @@ const IndexPage = () => {
               githubLink="https://github.com/dspuci/dspuci-website-gatsby"
               webLink="http://www.dspuci.com/"/>
           </SectionLayout>
-          
+
         </Layout>
+
+        <Footer />
 
       </ThemeProvider> 
   );

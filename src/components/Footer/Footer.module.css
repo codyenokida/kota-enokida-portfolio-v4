@@ -1,0 +1,41 @@
+.footer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.blurb {
+    grid-column: 1 / 2;
+    padding: 0 0 40px 40px;
+}
+
+.blurb p {
+    margin: 0;
+}
+
+.linksContainer {
+    grid-column: 2 / 3;
+}
+
+.linksContainer a {
+    color: #4AA8FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .blurb {
+        grid-row: 2 / 3;
+        width: 100vw;
+        padding: 0 0 20px 0;
+    }
+
+    .linksContainer {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
