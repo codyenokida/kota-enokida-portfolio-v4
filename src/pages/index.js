@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 
+import { GlobalStyles } from '../global';
+import { lightTheme, darkTheme } from '../theme';
+
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
 import NavBar from "../components/NavBar/NavBar"
@@ -8,15 +11,14 @@ import SkillsBox from "../components/SkillsBox/SkillsBox"
 import ExperienceBox from "../components/ExperienceBox/ExperienceBox"
 import ProjectBox from "../components/ProjectBox/ProjectBox"
 import Footer from "../components/Footer/Footer"
+import Landing from "../components/Landing/Landing"
 
 import { Flex } from "rebass"
 import { ThemeProvider } from 'styled-components';
 
-import { lightTheme, darkTheme } from '../theme';
-import { GlobalStyles } from '../global';
-
 import codyenokidaImage from "../images/codyenokida-preview.png"
 import dspuciImage from "../images/dspuci-preview.png"
+import kotaweatherImage from "../images/kotaweather-preview.png"
 
 const IndexPage = () => {
 
@@ -41,6 +43,7 @@ const IndexPage = () => {
             <h2>Let’s talk! 📩 <a href="mailto:codyenokida@gmail.com" target="_blank" rel="noopener noreferrer">codyenokida@gmail.com</a></h2>
             <br/>
           </div>
+          {/* <Landing /> */}
           <SectionLayout title="ABOUT ME">
             <p>
             I’m currently a 2nd year at the <span>University of California, Irvine</span> pursuing a degree in computer science and digital arts. I have a passion for building awesome things on the web. 
@@ -121,6 +124,15 @@ const IndexPage = () => {
               theme={theme}
               githubLink="https://github.com/dspuci/dspuci-website-gatsby"
               webLink="http://www.dspuci.com/"/>
+
+            <ProjectBox 
+              src={kotaweatherImage} 
+              title="kotaweather.heroku.com" 
+              description="Website that showcases weather highlights from zipcode." 
+              tech="React.js, node.js, express, openweatherapi" 
+              theme={theme}
+              githubLink="https://github.com/codyenokida/weather-application-v2"
+              webLink="https://kotaweather.herokuapp.com/"/>
           </SectionLayout>
 
         </Layout>

@@ -1,0 +1,21 @@
+.landingContainer {
+    width: 100%;
+}
+
+.introduction {
+    margin-top: 50px;
+}
+
+.character {
+    width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .image {
+        display: none
+    }
+
+    .introduction {
+        margin-top: 20px;
+    }
+}

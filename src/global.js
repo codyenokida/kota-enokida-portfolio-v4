@@ -12,7 +12,6 @@ export const GlobalStyles = createGlobalStyle`
 
   h1 {
     font-size: 2.5rem;
-    max-width: 800px;
     font-weight: 300;
   }
 
