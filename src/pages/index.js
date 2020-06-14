@@ -11,7 +11,6 @@ import SkillsBox from "../components/SkillsBox/SkillsBox"
 import ExperienceBox from "../components/ExperienceBox/ExperienceBox"
 import ProjectBox from "../components/ProjectBox/ProjectBox"
 import Footer from "../components/Footer/Footer"
-import Landing from "../components/Landing/Landing"
 
 import { Flex } from "rebass"
 import { ThemeProvider } from 'styled-components';
@@ -19,6 +18,8 @@ import { ThemeProvider } from 'styled-components';
 import codyenokidaImage from "../images/codyenokida-preview.png"
 import dspuciImage from "../images/dspuci-preview.png"
 import kotaweatherImage from "../images/kotaweather-preview.png"
+
+import "index.css";
 
 const IndexPage = () => {
 

@@ -1,0 +1,6 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Apercu, "Source Sans Pro", system,system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    transition: all 0.25s linear;
+}
