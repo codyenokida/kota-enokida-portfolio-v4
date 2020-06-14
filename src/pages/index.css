@@ -3,3 +3,26 @@ html {
     margin: 0;
     font-family: Apercu, "Source Sans Pro", system,system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
 }
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+span {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h2 a {
+    text-decoration: underline solid #4AA8FF;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

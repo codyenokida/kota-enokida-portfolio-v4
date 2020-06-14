@@ -10,30 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 300;
-  }
-
-  span {
-    font-weight: 500;
-  }
-
-  h2 {
-    font-weight: 300;
-  }
-
-  h2 a {
-    text-decoration: underline solid #4AA8FF;
-  }
-
   a {
     color: ${({ theme }) => theme.text};
-  }
-
-  @media only screen and (max-width: 480px) {
-    h1 {
-      font-size: 2rem;
-    }
   }
 `;
