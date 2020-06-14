@@ -19,7 +19,7 @@ import codyenokidaImage from "../images/codyenokida-preview.png"
 import dspuciImage from "../images/dspuci-preview.png"
 import kotaweatherImage from "../images/kotaweather-preview.png"
 
-import "index.css";
+import "./index.css";
 
 const IndexPage = () => {
 
