@@ -39,7 +39,7 @@ const IndexPage = () => {
           <div style={{marginTop: 100, marginBottom: 150,}}>
             <h1>Hey there! 🤙</h1>
             <br/>
-            <h1>I’m <span>Kota Enokida</span>, an aspiring front-end developer focused on delivering beautiful interfaces & user experiences 🖥</h1>
+            <h1>I’m <span>Kota Enokida</span>, an aspiring software developer focused on delivering beautiful interfaces & user experiences 🖥</h1>
             <br/>
             <h2>Let’s talk! 📩 <a href="mailto:codyenokida@gmail.com" target="_blank" rel="noopener noreferrer">codyenokida@gmail.com</a></h2>
             <br/>
@@ -64,7 +64,7 @@ const IndexPage = () => {
 
               <SkillsBox 
                 title="LANGUAGES">
-                  {['Javascript (ES6)', 'HTML', 'CSS/Sass', 'Python', 'C++', 'Java']}
+                  {['Javascript (ES6)', 'HTML', 'CSS/Sass', 'Python', 'C/C++', 'Java']}
               </SkillsBox>
 
               <SkillsBox 
@@ -74,7 +74,7 @@ const IndexPage = () => {
 
               <SkillsBox 
                 title="TOOLS">
-                  {['Git & Github', 'Bash', 'Postman', 'MongoDB', 'Hadoop', 'Unity']}
+                  {['Git & Github', 'Bash', 'Postman', 'MongoDB', 'Hadoop', 'Unity', 'SQL']}
               </SkillsBox>
 
               <SkillsBox 
