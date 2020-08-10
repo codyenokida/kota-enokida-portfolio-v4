@@ -27,8 +27,8 @@ const ProjectBox = ({src, title, description, tech, theme, githubLink, webLink})
                     <p>{description}</p>
                     <p className={styles.tech}>Technologies:</p>
                     <p>{tech}</p>
-                    <a href={githubLink} target="_blank">{theme === 'light' ? <Image src={githubBlack} className={styles.icon}/> : <Image src={githubWhite} className={styles.icon}/>}</a>
-                    <a href={webLink} target="_blank">{theme === 'light' ? <Image src={hyperlinkBlack}/> : <Image src={hyperlinkWhite}/>}</a>
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer">{theme === 'light' ? <Image src={githubBlack} className={styles.icon}/> : <Image src={githubWhite} className={styles.icon}/>}</a>
+                    <a href={webLink} target="_blank" rel="noopener noreferrer">{theme === 'light' ? <Image src={hyperlinkBlack}/> : <Image src={hyperlinkWhite}/>}</a>
                 </Box>
             </Flex>
         </Fade>

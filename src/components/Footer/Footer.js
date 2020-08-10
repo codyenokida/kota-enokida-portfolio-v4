@@ -8,7 +8,7 @@ const Footer = () => {
     return(
         <footer className={styles.footer}>
             <div className={styles.blurb}>
-                <p>Created with 💛</p> 
+                <p>Created with <span role="img" aria-label="emoji">💛</span></p> 
                 <p>By Kota Cody Enokida️</p>
             </div>
 
