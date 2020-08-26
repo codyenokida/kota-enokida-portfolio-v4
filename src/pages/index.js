@@ -47,7 +47,7 @@ const IndexPage = () => {
           {/* <Landing /> */}
           <SectionLayout title="ABOUT ME">
             <p>
-            I’m an incoming 3rd year at the <span>University of California, Irvine</span> pursuing a degree in computer science and digital arts. I have a passion for building awesome things on the web. 
+            I’m an incoming 3rd year at the <span>University of California, Irvine</span> pursuing a degree in computer science. I have a passion for building awesome things on the web. 
             </p>
             <br/>
             <p>
@@ -64,7 +64,7 @@ const IndexPage = () => {
 
               <SkillsBox 
                 title="LANGUAGES">
-                  {['Javascript (ES6)', 'HTML', 'CSS/Sass', 'Python', 'C/C++', 'Java']}
+                  {['Javascript (ES6)', 'HTML', 'CSS/SCSS', 'Python', 'C/C++', 'Java']}
               </SkillsBox>
 
               <SkillsBox 
