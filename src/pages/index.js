@@ -33,7 +33,7 @@ const IndexPage = () => {
   return(
       <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyles />
-        <NavBar onChange={toggleTheme}/>
+        <NavBar onChange={() => toggleTheme()}/>
         <SEO title="Kota Cody Enokida" />
         <Layout>
           <div style={{marginTop: 100, marginBottom: 150,}}>
@@ -47,7 +47,7 @@ const IndexPage = () => {
           {/* <Landing /> */}
           <SectionLayout title="ABOUT ME">
             <p>
-            I’m an incoming 3rd year at the <span>University of California, Irvine</span> pursuing a degree in computer science. I have a passion for building awesome things on the web. 
+            I’m a 3rd year at the <strong>University of California, Irvine</strong> pursuing a degree in computer science. I have a passion for building awesome things on the web. 
             </p>
             <br/>
             <p>
@@ -86,8 +86,12 @@ const IndexPage = () => {
           
           <SectionLayout title="EXPERIENCES">
             <ExperienceBox
+              title="UCI Student Center & Event Services"
+              duration="Dec 2020 - Present"
+              position="Full Stack Web Developer" />
+            <ExperienceBox
               title="Hack+"
-              duration="Aug 2020 - Present"
+              duration="Aug 2020 - Dec 2020"
               position="Software Engineering Intern" />
             <ExperienceBox
               title="XLsoft Corporation"
