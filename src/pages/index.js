@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
-import { GlobalStyles } from '../global';
-import { lightTheme, darkTheme } from '../theme';
+import { GlobalStyles } from '../global'
+import { lightTheme, darkTheme } from '../theme'
 
 import Layout from "../components/Layout/Layout"
 import SEO from "../components/seo"
@@ -13,12 +13,14 @@ import ProjectBox from "../components/ProjectBox/ProjectBox"
 import Footer from "../components/Footer/Footer"
 
 import { Flex } from "rebass"
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components'
 
 import codyenokidaImage from "../images/codyenokida-preview.png"
 import dspuciImage from "../images/dspuci-preview.png"
-import kotaweatherImage from "../images/kotaweather-preview.png"
+// import kotaweatherImage from "../images/kotaweather-preview.png"
+import pennyDAOImage from "../images/pennyDAO-preview.png"
 import swifttipsImage from "../images/swifttips-preview.png"
+import zoomiezImage from "../images/zoomiez-preview.png"
 
 import "./index.css";
 
@@ -64,17 +66,17 @@ const IndexPage = () => {
 
               <SkillsBox 
                 title="LANGUAGES">
-                  {['Javascript (ES6)', 'HTML', 'CSS/SCSS', 'Python', 'C/C++', 'Java']}
+                  {['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS/SCSS', 'C#', 'Python', 'C/C++', 'Java']}
               </SkillsBox>
 
               <SkillsBox 
                 title="FRAMEWORKS">
-                  {['React', 'Angular', 'Node', 'Express', 'Wordpress']}
+                  {['React', 'Angular', 'Node', 'Express', 'Wordpress', '.NET', 'Web3']}
               </SkillsBox>
 
               <SkillsBox 
                 title="TOOLS">
-                  {['Git & Github', 'Bash', 'Postman', 'MongoDB', 'Hadoop', 'Unity', 'mySQL']}
+                  {['Git', 'Bash', 'Postman', 'MongoDB', 'Unity', 'MySQL']}
               </SkillsBox>
 
               <SkillsBox 
@@ -103,7 +105,7 @@ const IndexPage = () => {
               position="Software Engineering Intern" />
             <ExperienceBox
               title="Delta Sigma Pi"
-              duration="Oct 2019 - Present"
+              duration="Oct 2019 - Dec 2020"
               position="Director of Technology, Webmaster" />
             <ExperienceBox
               title="Management Information Student Society"
@@ -116,6 +118,22 @@ const IndexPage = () => {
           </SectionLayout>
 
           <SectionLayout title="PROJECTS">
+            <ProjectBox 
+              src={pennyDAOImage} 
+              title="PennyDAO" 
+              description="Paying off student debt through a PoC DAO built on Ethereum and DeFi." 
+              tech="React.js, Google Firebase, Web3.js, Blockchain, Ethereum" 
+              theme={theme}
+              githubLink="https://github.com/PennyDAO/pennyDAO_official"
+              webLink="https://pennydao.github.io/landing-page/"/>
+            <ProjectBox 
+              src={zoomiezImage} 
+              title="Zoomiez" 
+              description="Your go-to chrome extension for managing meetings on zoom." 
+              tech="React, Rollup" 
+              theme={theme}
+              githubLink="https://github.com/codyenokida/zoomiez2.0"
+              webLink="https://chrome.google.com/webstore/detail/zoomiez/lmjfjafdpknamhnhkillmnhdmnolgmjl"/>
             <ProjectBox 
               src={swifttipsImage} 
               title="SwiftTips" 
@@ -140,14 +158,6 @@ const IndexPage = () => {
               theme={theme}
               githubLink="https://github.com/dspuci/dspuci-website-gatsby"
               webLink="http://www.dspuci.com/"/>
-            <ProjectBox 
-              src={kotaweatherImage} 
-              title="kotaweather.heroku.com" 
-              description="Website that showcases weather highlights from zipcode." 
-              tech="React.js, node.js, express, openweatherapi" 
-              theme={theme}
-              githubLink="https://github.com/codyenokida/weather-application-v2"
-              webLink="https://kotaweather.herokuapp.com/"/>
           </SectionLayout>
 
         </Layout>
