@@ -41,7 +41,7 @@ const IndexPage = () => {
           <div style={{marginTop: 100, marginBottom: 150,}}>
             <h1>Hey there! <span role="img" aria-label="emoji">🤙</span></h1>
             <br/>
-            <h1>I’m <span>Kota Enokida</span>, an aspiring software developer focused on delivering beautiful interfaces & user experiences 🖥</h1>
+            <h1>I’m <span>Kota Cody Enokida</span>, a software developer, hammock man, and an adventurer. 🖥 💤🌲</h1>
             <br/>
             <h2>Let’s talk! <span role="img" aria-label="emoji">📩</span> <a href="mailto:codyenokida@gmail.com" target="_blank" rel="noopener noreferrer">codyenokida@gmail.com</a></h2>
             <br/>
@@ -49,15 +49,15 @@ const IndexPage = () => {
           {/* <Landing /> */}
           <SectionLayout title="ABOUT ME">
             <p>
-            I’m a 3rd year at the <strong>University of California, Irvine</strong> pursuing a degree in computer science. I have a passion for building awesome things on the web. 
+            I’m an incoming 4th year at the <strong>University of California, Irvine</strong> pursuing a degree in computer science. I have a passion for building awesome things on the web. 
             </p>
             <br/>
             <p>
-            As a software engineer, I enjoy most closing the gap between technology and design. I like to combine my technical expertise with my eye for design to create beautiful products that are engaging and pleasant for the user.
+            As a software engineer, I enjoy most closing the gap between technology and design. I focus mostly on frontend development; however I have skills across the full stack development cycle.
             </p>
             <br/>
             <p>
-            When I’m away from the computer screen, I enjoy playing the guitar, spending time with loved ones, and being outdoors 🏔
+            When I’m away from the computer screen, I enjoy playing the guitar, spending time with loved ones, and being outdoors
             </p>
           </SectionLayout>
 
@@ -66,17 +66,17 @@ const IndexPage = () => {
 
               <SkillsBox 
                 title="LANGUAGES">
-                  {['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS/SCSS', 'C#', 'Python', 'C/C++', 'Java']}
+                  {['JavaScript (ES6)', 'TypeScript', 'HTML', 'CSS', 'C#', 'Python', 'C/C++', 'Java']}
               </SkillsBox>
 
               <SkillsBox 
                 title="FRAMEWORKS">
-                  {['React', 'Angular', 'Node', 'Express', 'Wordpress', '.NET', 'Web3']}
+                  {['React', 'Angular', 'Node', 'Express', '.NET', 'Web3']}
               </SkillsBox>
 
               <SkillsBox 
                 title="TOOLS">
-                  {['Git', 'Bash', 'Postman', 'MongoDB', 'Unity', 'MySQL']}
+                  {['Git', 'Bash', 'Postman', 'MongoDB', 'Unity', 'MySQL', 'PostgreSQL']}
               </SkillsBox>
 
               <SkillsBox 
@@ -87,6 +87,14 @@ const IndexPage = () => {
           </SectionLayout>
           
           <SectionLayout title="EXPERIENCES">
+          <ExperienceBox
+              title="Beyond Limits AI"
+              duration="Jun 2021 - Present"
+              position="Software Engineering Intern" />
+              <ExperienceBox
+              title="AirSwap"
+              duration="Jun 2021 - Present"
+              position="Open Source Developer" />
             <ExperienceBox
               title="UCI Student Center & Event Services"
               duration="Dec 2020 - Present"
